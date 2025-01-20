@@ -87,6 +87,7 @@ class ModelPlageSession extends Model {
       return true;
     } catch (err) {
       debug("remove PlageSession : " + err.stack);
+      return false;
     }
   }
 
